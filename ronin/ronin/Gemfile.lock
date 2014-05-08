@@ -1,0 +1,22 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    chars (0.2.2)
+    combinatorics (0.4.3)
+    data_paths (0.3.1)
+    hexdump (0.2.3)
+    parameters (0.4.4)
+    ronin-support (0.5.1)
+      chars (~> 0.2)
+      combinatorics (~> 0.4)
+      data_paths (~> 0.3)
+      hexdump (~> 0.1)
+      parameters (~> 0.4)
+      uri-query_params (~> 0.6)
+    uri-query_params (0.7.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ronin-support (~> 0.5)

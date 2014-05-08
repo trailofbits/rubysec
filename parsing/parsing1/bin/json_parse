@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+begin
+  require 'bundler/setup'
+rescue LoadError => e
+  warn e.message
+  warn "Run `gem install bundler` to install Bundler"
+  exit -1
+end
+
+$LOAD_PATH.unshift(File.expand_path('../lib',File.dirname(__FILE__)))
+require 'readline'
+require 'json_parser'
+
+parser = JSONParser.new
+
+while (line = Readline.readline('json> ', true))
+  begin
+    p parser.parse(line.chomp)
+  rescue NotImplementedError, Parslet::ParseFailed => error
+    $stderr.puts error.message
+  end
+end
