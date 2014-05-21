@@ -1,5 +1,4 @@
-Parser Level 2 Workshop
-====
+# Parslet Level 2
 
 In level 1 you probably noticed that Parslet returns a parse tree, as nested Hashes and Arrays.  Since we are parsing JSON, we want native Ruby Objects not a parse tree. This is where Transforms come in.
 
@@ -25,7 +24,7 @@ But wait, there's more! In order to prevent [CVE-2012-2660], you must also trans
 * `[{}]`    -> `nil`
 * `{}`      -> `nil`
 
-#####Level 2 Additional Resources
+## Level 2 Additional Resources
 
 * [Parser Level 2](https://github.com/trailofbits/securitybook/tree/master/ruby_security/parsing2)
 * [Parslet::Transform](http://kschiess.github.io/parslet/transform.html)
