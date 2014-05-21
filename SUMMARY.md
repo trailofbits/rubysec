@@ -12,5 +12,5 @@
     * [Mutant 1](mutant/mutant1.md)
 * [Ronin](ronin/README.md)
     * [Exploit 1](ronin/exploit1.md)
-* [Contributors](contributors/README.md)
+* [Contributors](contributors.md)
 
