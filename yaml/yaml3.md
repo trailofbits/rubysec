@@ -6,9 +6,9 @@ Congratulations!  You've made it to level 3 of the YAML deserialization exploita
 ```bash
 	$ gem install bundler
 	$ bundle install
-	$ ./app.rb
-	$ ./exploit.rb
+	$ ./app.rb &
+	$ ./exploit.rb <command>
 ```
 
-## Level 3 Workshop Files
+## Level 3 Files
 * [YAML Level 3](https://github.com/trailofbits/securitybook/tree/master/ruby_security/yaml3)

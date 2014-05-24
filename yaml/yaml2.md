@@ -6,9 +6,9 @@ Welcome to Level 2 of the YAML deserialization exploitation exercises!  This cha
 ```bash
 	$ gem install bundler
 	$ bundle install
-	$ ./app.rb
-	$ ./exploit.rb
+	$ ./app.rb &
+	$ ./exploit.rb <command>
 ```
 
-## Level 2 Workshop Files
+## Level 2 Files
 * [YAML Level 2](https://github.com/trailofbits/securitybook/tree/master/ruby_security/yaml2)

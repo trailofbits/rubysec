@@ -6,9 +6,9 @@ Welcome to the final level of the YAML deserialization exploitation challenges! 
 ```bash
 	$ gem install bundler
 	$ bundle install
-	$ ./app.rb
-	$ ./exploit.rb
+	$ ./app.rb &
+	$ ./exploit.rb <command>
 ```
 
-## Level 4 Workship Files
+## Level 4 Files
 * [YAML Level 4](https://github.com/trailofbits/securitybook/tree/master/ruby_security/yaml4)

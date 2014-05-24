@@ -6,9 +6,9 @@ Welcome to Level 1 of the YAML deserialization exploitation exercises!  In this 
 ```bash
 	$ gem install bundler
 	$ bundle install
-	$ ./app.rb
-	$ ./exploit.rb
+	$ ./app.rb &
+	$ ./exploit.rb <command>
 ```
 
-## Level 1 Workship Files
+## Level 1 Files
 * [YAML Level 1](https://github.com/trailofbits/securitybook/tree/master/ruby_security/yaml1)
