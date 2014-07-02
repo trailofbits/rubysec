@@ -34,7 +34,7 @@ describe Document do
     end
   end
 
-  describe "#has_access" do
+  describe "#has_access?" do
     it "should determine when a user has access"
   end
 
@@ -43,6 +43,6 @@ describe Document do
   end
 
   describe "#revoke_access" do
-    it "should grant access"
+    it "should revoke access"
   end
 end

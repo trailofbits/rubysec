@@ -1,54 +1,46 @@
 <!DOCTYPE HTML>
 <html lang="en-US" manifest="../manifest.appcache">
-    <head prefix="og: http://ogp.me/ns# book: http://ogp.me/ns/book#">
+    
+    <head>
         
         <meta charset="UTF-8">
         <title>YAML 3 | RubySec Field Guide</title>
-
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="robots" content="index, follow">
-        <meta name="author" content="trailofbits">
-        <meta name="description" content="In the last year, many new vulnerabilities and vulnerability classes have been discovered in Ruby applications. These vulnerabilities make use of features specific to the Ruby language and common idioms present in large Ruby projects, such as serialization and deserialization of data in the YAML format. As these vulnerability classes were initially discovered in popular and well-studied open source software, it’s extremely likely that they occur in applications throughout the Ruby ecosystem. These applications frequently represent lucrative targets for attackers, and with the appearance of new and easily exploitable bug classes, the potential for targeted and mass exploitation of Ruby programs has been demonstrated to the world. In this training, we aim to bridge a knowledge and skills gap by bringing information about these new vulnerability classes to software developers.">
-        <meta name="keywords" content="gitbook,github" >
-        <meta name="generator" content="www.gitbook.io">
-
-        
-        <link rel="next" href="../yaml/yaml4.html" />
-        
-        
-        <link rel="prev" href="../yaml/yaml2.html" />
-        
-
-        <meta property="og:title" content="YAML 3 | RubySec Field Guide">
-        <meta property="og:site_name" content="RubySec Field Guide">
-        <meta property="og:type" content="book">
-        <meta property="og:locale" content="en_US">
-
-        <meta property="book:author" content="https://github.com/trailofbits">
-        <meta property="book:tag" content="GitBook">
-
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 0.5.6">
+        <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
         <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    <meta name="author" content="trailofbits">
+    
+    
+    <link rel="next" href="../yaml/yaml4.html" />
+    
+    
+    <link rel="prev" href="../yaml/yaml2.html" />
+    
+
         
     </head>
     <body>
         
-
-        <link rel="stylesheet" href="../gitbook/style.css">
         
+<link rel="stylesheet" href="../gitbook/style.css">
 
 
         
-    <div class="book" data-github="trailofbits/rubysec" data-level="1.3" data-basepath=".." data-revision="1400706499331">
+    <div class="book" data-github="trailofbits/rubysec" data-level="1.3" data-basepath=".." data-revision="1404262300020">
     <div class="book-header">
     <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
     
     <a href="https://github.com/trailofbits/rubysec" target="_blank" class="btn pull-left home-bookmark" aria-label="GitHub home"><i class="fa fa-bookmark-o"></i></a>
     
-    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
     <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
     <span id="font-settings-wrapper">
         <a href="#" class="btn pull-left toggle-font-settings" aria-label="Toggle font settings"><i class="fa fa-font"></i>
@@ -101,11 +93,15 @@
     </h1>
 </div>
 
-    <div class="book-summary">
+    
+
+<div class="book-summary">
     <div class="book-search">
         <input type="text" placeholder="Search" class="form-control" />
     </div>
     <ul class="summary">
+        
+        
         
         <li>
             <a href="https://github.com/trailofbits" target="blank" class="author-link">About the author</a>
@@ -113,11 +109,13 @@
         
 
         
+        
         <li>
             <a href="https://github.com/trailofbits/rubysec/issues" target="blank"class="issues-link">Questions and Issues</a>
         </li>
         
 
+        
         
         <li>
             <a href="https://github.com/trailofbits/rubysec/edit/master/yaml/yaml3.md" target="blank" class="contribute-link">Edit and Contribute</a>
@@ -125,136 +123,258 @@
         
 
         
+        <li class="divider"></li>
+        
 
-        <li data-level="0" data-path="index.html">
-            <a href="../"><i class="fa fa-check"></i> Introduction</a>
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
         </li>
+    
         
-            <li class="chapter " data-level="1" data-path="yaml/README.html">
+        <li class="chapter " data-level="1" data-path="yaml/README.html">
+            
                 
-                <a href="../yaml/README.html">
-                    <i class="fa fa-check"></i> <b>1.</b> YAML
-                </a>
+                    <a href="../yaml/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         YAML
+                    </a>
                 
+            
+            
+            <ul class="articles">
                 
-                <ul class="articles">
-                    
-                        <li  data-level="1.1" data-path="yaml/yaml1.html">
-                            
-                            <a href="../yaml/yaml1.html">
-                                <i class="fa fa-check"></i> <b>1.1.</b> YAML 1
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="1.2" data-path="yaml/yaml2.html">
-                            
-                            <a href="../yaml/yaml2.html">
-                                <i class="fa fa-check"></i> <b>1.2.</b> YAML 2
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="1.3" data-path="yaml/yaml3.html">
-                            
-                            <a href="../yaml/yaml3.html">
-                                <i class="fa fa-check"></i> <b>1.3.</b> YAML 3
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="1.4" data-path="yaml/yaml4.html">
-                            
-                            <a href="../yaml/yaml4.html">
-                                <i class="fa fa-check"></i> <b>1.4.</b> YAML 4
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
+    
         
-            <li class="chapter " data-level="2" data-path="parslet/README.html">
+        <li class="chapter " data-level="1.1" data-path="yaml/yaml1.html">
+            
                 
-                <a href="../parslet/README.html">
-                    <i class="fa fa-check"></i> <b>2.</b> Parslet
-                </a>
+                    <a href="../yaml/yaml1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         YAML 1
+                    </a>
                 
-                
-                <ul class="articles">
-                    
-                        <li  data-level="2.1" data-path="parslet/json1.html">
-                            
-                            <a href="../parslet/json1.html">
-                                <i class="fa fa-check"></i> <b>2.1.</b> JSON 1
-                            </a>
-                            
-                        </li>
-                    
-                        <li  data-level="2.2" data-path="parslet/json2.html">
-                            
-                            <a href="../parslet/json2.html">
-                                <i class="fa fa-check"></i> <b>2.2.</b> JSON 2
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
+            
+            
+        </li>
+    
         
-            <li class="chapter " data-level="3" data-path="mutant/README.html">
+        <li class="chapter " data-level="1.2" data-path="yaml/yaml2.html">
+            
                 
-                <a href="../mutant/README.html">
-                    <i class="fa fa-check"></i> <b>3.</b> Mutant
-                </a>
+                    <a href="../yaml/yaml2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         YAML 2
+                    </a>
                 
-                
-                <ul class="articles">
-                    
-                        <li  data-level="3.1" data-path="mutant/mutant1.html">
-                            
-                            <a href="../mutant/mutant1.html">
-                                <i class="fa fa-check"></i> <b>3.1.</b> Mutant 1
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
+            
+            
+        </li>
+    
         
-            <li class="chapter " data-level="4" data-path="ronin/README.html">
+        <li class="chapter " data-level="1.3" data-path="yaml/yaml3.html">
+            
                 
-                <a href="../ronin/README.html">
-                    <i class="fa fa-check"></i> <b>4.</b> Ronin
-                </a>
+                    <a href="../yaml/yaml3.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         YAML 3
+                    </a>
                 
-                
-                <ul class="articles">
-                    
-                        <li  data-level="4.1" data-path="ronin/exploit1.html">
-                            
-                            <a href="../ronin/exploit1.html">
-                                <i class="fa fa-check"></i> <b>4.1.</b> Exploit 1
-                            </a>
-                            
-                        </li>
-                    
-                </ul>
-                
-            </li>
+            
+            
+        </li>
+    
         
-            <li class="chapter " data-level="5" data-path="contributors/README.html">
+        <li class="chapter " data-level="1.4" data-path="yaml/yaml4.html">
+            
                 
-                <a href="../contributors/README.html">
-                    <i class="fa fa-check"></i> <b>5.</b> Contributors
-                </a>
+                    <a href="../yaml/yaml4.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         YAML 4
+                    </a>
                 
-                
-            </li>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
         
+        <li class="chapter " data-level="2" data-path="parslet/README.html">
+            
+                
+                    <a href="../parslet/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Parslet
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="parslet/json1.html">
+            
+                
+                    <a href="../parslet/json1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         JSON 1
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="parslet/json2.html">
+            
+                
+                    <a href="../parslet/json2.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         JSON 2
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="3" data-path="mutant/README.html">
+            
+                
+                    <a href="../mutant/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                         Mutant
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="3.1" data-path="mutant/mutant1.html">
+            
+                
+                    <a href="../mutant/mutant1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                         Mutant 1
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="4" data-path="ronin/README.html">
+            
+                
+                    <a href="../ronin/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                         Ronin
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="4.1" data-path="ronin/exploit1.html">
+            
+                
+                    <a href="../ronin/exploit1.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                         Exploit 1
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="5" data-path="contributors.html">
+            
+                
+                    <a href="../contributors.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                         Contributors
+                    </a>
+                
+            
+            
+        </li>
+    
+
 
         
         <li class="divider"></li>
@@ -300,7 +420,7 @@
     
         <a href="../ronin/exploit1.html" title="Exploit 1" class="chapter  " data-progress="4.1" style="left: 92.3076923076923%;"></a>
     
-        <a href="../contributors/README.html" title="Contributors" class="chapter  new-chapter" data-progress="5" style="left: 100%;"></a>
+        <a href="../contributors.html" title="Contributors" class="chapter  new-chapter" data-progress="5" style="left: 100%;"></a>
     
     </div>
 </div>
@@ -314,10 +434,10 @@
 <h2 id="installation-steps">Installation Steps</h2>
 <pre><code class="lang-bash">    $ gem install bundler
     $ bundle install
-    $ ./app.rb
-    $ ./exploit.rb
+    $ ./app.rb &amp;
+    $ ./exploit.rb &lt;command&gt;
 </code></pre>
-<h2 id="level-3-workshop-files">Level 3 Workshop Files</h2>
+<h2 id="level-3-files">Level 3 Files</h2>
 <ul>
 <li><a href="https://github.com/trailofbits/securitybook/tree/master/ruby_security/yaml3" target="_blank">YAML Level 3</a></li>
 </ul>
@@ -339,31 +459,17 @@
 </div>
 
         
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/mode-javascript.js"></script>
-        <script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
-        <script src="../gitbook/app.js"></script>
-        
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-mixpanel/plugin.js"></script>
-    
-
-    
-    <script src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
-    
+<script src="../gitbook/jsrepl/jsrepl.js" id="jsrepl-script"></script>
+<script src="../gitbook/app.js"></script>
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {};
+    var config = {"fontSettings":{"theme":"night"}};
     gitbook.start(config);
 });
 </script>
 
+        
     </body>
+    
 </html>

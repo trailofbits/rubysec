@@ -1,11 +1,11 @@
 CACHE MANIFEST
-# Revision 1400706499332
+# Revision 1404262300020
 
 CACHE:
-mutant/README.html
-mutant/mutant1.html
-contributors/README.html
 index.html
+mutant/README.html
+contributors.html
+mutant/mutant1.html
 parslet/README.html
 parslet/json1.html
 parslet/json2.html
@@ -17,12 +17,6 @@ yaml/yaml2.html
 yaml/yaml3.html
 yaml/yaml4.html
 gitbook/app.js
-gitbook/fonts/anonymouspro/400.woff
-gitbook/fonts/anonymouspro/400i.woff
-gitbook/fonts/anonymouspro/700.woff
-gitbook/fonts/anonymouspro/700i.woff
-gitbook/fonts/ebgaramond/400.woff
-gitbook/fonts/ebgaramond/400i.woff
 gitbook/fonts/fontawesome/FontAwesome.otf
 gitbook/fonts/fontawesome/fontawesome-webfont.eot
 gitbook/fonts/fontawesome/fontawesome-webfont.svg
@@ -52,8 +46,6 @@ gitbook/jsrepl/sandbox.html
 gitbook/jsrepl/sandbox.js
 gitbook/print.css
 gitbook/style.css
-gitbook/plugins/gitbook-plugin-mathjax/plugin.js
-gitbook/plugins/gitbook-plugin-mixpanel/plugin.js
 
 NETWORK:
 *
