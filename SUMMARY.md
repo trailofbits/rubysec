@@ -1,8 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-  * [Prerequisites](prerequisites.md)
-  * [Presentation](slides.md)
+   * [Prerequisites](prerequisites.md)
+   * [Intro Slides](slides.md)
 * [YAML](yaml/README.md)
    * [YAML 1](yaml/yaml1.md)
    * [YAML 2](yaml/yaml2.md)
@@ -17,3 +17,4 @@
    * [Exploit 1](ronin/exploit1.md)
 * [Resources](resources.md)
 * [Contributors](contributors.md)
+

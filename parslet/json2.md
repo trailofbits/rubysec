@@ -1,7 +1,7 @@
 # Parslet Level 2
 In level 1 you probably noticed that Parslet returns a parse tree, as nested Hashes and Arrays.  Since we are parsing JSON, we want native Ruby Objects not a parse tree. This is where Transforms come in.
 
-Similar to level 1, edit the boiler plate code provided below to create your transformer which will take the tokens you carved in level 1 and interpret them to executable Ruby code.  Once you see all green from the rspec tests you'll have succesfully completed your Parslet Parser and Transformer!
+Similar to level 1, edit the boiler plate code provided below to create your transformer which will take the tokens you carved in level 1 and interpret them to executable Ruby code. Once you see all green from the rspec tests you'll have succesfully completed your Parslet Parser and Transformer!
 
 Below is a listing of some examples of converting JSON nodes into their Ruby equivalents. Your task is to implement a Parslet Transform that converts the JSON nodes into their native Ruby equivalents.
 
