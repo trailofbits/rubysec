@@ -1,7 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-* [Prerequisites](prerequisites.md)
+  * [Prerequisites](prerequisites.md)
+  * [Slides](/slides/index.html)
 * [YAML](yaml/README.md)
    * [YAML 1](yaml/yaml1.md)
    * [YAML 2](yaml/yaml2.md)
