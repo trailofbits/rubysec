@@ -15,7 +15,8 @@ Edit the boiler plate code to create your parser. Once all of the rspec tests pa
 * Arrays (`[1234, "1234"]`)
 * Hashes (`{"key": "value"}`)
 
-* [Parser Level 1](/rubysec/parsing1)
+## Level 1 Files
+* [Parser Level 1](https://github.com/trailofbits/rubysec/tree/master/parslet/json1)
 
 ## Level 1 Additional Resources
 

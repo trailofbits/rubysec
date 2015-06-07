@@ -11,4 +11,4 @@ Welcome to the final level of the YAML deserialization exploitation challenges! 
 ```
 
 ## Level 4 Files
-* [YAML Level 4](https://github.com/trailofbits/securitybook/tree/master/ruby_security/yaml4)
+* [YAML Level 4](https://github.com/trailofbits/rubysec/tree/master/yaml/yaml4)

@@ -21,8 +21,9 @@ But wait, there's more! In order to prevent [CVE-2012-2660], you must also trans
 * `[{}]`    -> `nil`
 * `{}`      -> `nil`
 
-## Level 2 Additional Resources
+## Level 2 Files
+* [Parser Level 2](https://github.com/trailofbits/rubysec/tree/master/parslet/json2)
 
-* [Parser Level 2](https://github.com/trailofbits/securitybook/tree/master/ruby_security/parsing2)
+## Level 2 Additional Resources
 * [Parslet::Transform](http://kschiess.github.io/parslet/transform.html)
 * [CVE-2012-2660](https://groups.google.com/forum/?fromgroups=#!topic/rubyonrails-security/8SA-M3as7A8)

@@ -11,4 +11,4 @@ Congratulations!  You've made it to level 3 of the YAML deserialization exploita
 ```
 
 ## Level 3 Files
-* [YAML Level 3](https://github.com/trailofbits/securitybook/tree/master/ruby_security/yaml3)
+* [YAML Level 3](https://github.com/trailofbits/rubysec/tree/master/yaml/yaml3)

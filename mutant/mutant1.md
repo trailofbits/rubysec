@@ -23,3 +23,6 @@ There are two rake tasks to help you:
     bundle exec mutant --rspec-full -r ./spec/document_spec.rb ::SecureDB::Document#grant_access
 
 When `rake mutant` prints all green, you have achieved full test coverage.
+
+## Level 1 Files
+* [Mutant Level 1](https://github.com/trailofbits/rubysec/tree/master/mutant/mutant1)

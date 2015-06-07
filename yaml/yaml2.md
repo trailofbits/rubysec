@@ -11,4 +11,4 @@ Welcome to Level 2 of the YAML deserialization exploitation exercises!  This cha
 ```
 
 ## Level 2 Files
-* [YAML Level 2](https://github.com/trailofbits/securitybook/tree/master/ruby_security/yaml2)
+* [YAML Level 2](https://github.com/trailofbits/rubysec/tree/master/yaml/yaml2)
