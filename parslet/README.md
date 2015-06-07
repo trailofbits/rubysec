@@ -9,7 +9,7 @@ Parsing is a classic (Hard&trade;) computer science problem and a common source 
 If the above series of steps sounds familiar, it's because this is the common process used for compiling a program. The goal here is typically to build an [abstract syntax-tree](http://en.wikipedia.org/wiki/Abstract_syntax_tree). If none of this material seems to be making any sense, or you have not had an introductory compilers course, take a look at the 'Additional Resources' section detailed below for some educational material.
 
 ## Parslet
-[Parslet](http://kschiess.github.io/parslet/) is a pure Ruby library (no compiling!) for constructing lexers/parsers with a clean Ruby DSL. It uses Parsing Expression Grammar (or PEG) which is essentially a Context-Free Grammar with no ambiguity, to perform greedy parsing. Most parsers built on Parslet are built in two stages. First, the input is *parsed* into an intermediate tree (level 1 exercise below) and, second, the input is *transformed* from the intermediary tree into a desired representation (level 2 exercise below).
+[Parslet](http://kschiess.github.io/parslet/) is a pure Ruby library (no compiling!) for constructing lexers/parsers with a clean Ruby DSL. It uses Parsing Expression Grammar (or PEG) which is essentially a Context-Free Grammar with no ambiguity, to perform greedy parsing. Most parsers built on Parslet are built in two stages. First, the input is *parsed* into an intermediate tree (JSON 1 exercise) and, second, the input is *transformed* from the intermediary tree into a desired representation (JSON 2 exercise).
 
 ## Parslet Pointers
 More information is detailed in the [Parslet Getting Started doc](http://kschiess.github.io/parslet/get-started.html).

@@ -13,8 +13,5 @@ Below is a listing of some additional resources to get up to speed on Ronin, or 
 
 * [Ronin](http://ronin-ruby.github.com/)
 * [Exploits](https://github.com/ronin-ruby/ronin-exploits#readme)
-* [Shellcode](https://github.com/ronin-ruby/ronin-asm#readme)
-* [Scanners](https://github.com/ronin-ruby/ronin-scanners#readme)
-* [Bruteforcers](https://github.com/ronin-ruby/ronin-bruteforcers#readme)
 * [activesupport](https://github.com/rails/rails/tree/master/activesupport#readme)
 * [ronin-support](http://ronin-ruby.github.com/docs/ronin-support/frames)
