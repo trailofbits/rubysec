@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Introduction | Ruby Security Field Guide</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="In the last year, many new vulnerabilities and vulnerability classes have been discovered in Ruby applications. These vulnerabilities make use of features specific to the Ruby language and common idioms present in large Ruby projects, such as serialization and deserialization of data in the YAML format. Since these vulnerability classes were initially discovered in popular and well-studied open source software, it’s extremely likely that they occur in applications throughout the Ruby ecosystem. Ruby applications frequently represent lucrative targets for attackers, and with the appearance of new and easily exploitable bug classes, the potential for targeted and mass exploitation of Ruby programs has been demonstrated to the world.">
+        <meta name="description" content="Recently discovered vulnerabilities in Ruby applications have the potential to affect vast swathes of the Internet and attract attackers to lucrative targets online.">
         <meta name="generator" content="GitBook 2.1.0">
         
         
@@ -25,7 +25,7 @@
         
     
     
-    <link rel="next" href="./yaml/index.html" />
+    <link rel="next" href="./prerequisites.html" />
     
     
 
@@ -34,7 +34,7 @@
     <body>
         
         
-    <div class="book" data-level="0" data-basepath="." data-revision="Sun Jun 07 2015 15:45:03 GMT-0400 (EDT)">
+    <div class="book" data-level="0" data-basepath="." data-revision="Sun Jun 07 2015 16:34:48 GMT-0400 (EDT)">
     
 
 <div class="book-summary">
@@ -61,6 +61,42 @@
                     </a>
                 
             
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="0.1" data-path="prerequisites.html">
+            
+                
+                    <a href="./prerequisites.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.1.</b>
+                        
+                        Prerequisites
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="0.2" data-path="slides/index.html">
+            
+                
+                    <a href="./slides/index.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>0.2.</b>
+                        
+                        Slides
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -268,13 +304,28 @@
             
         </li>
     
-        <li class="chapter " data-level="5" data-path="contributors.html">
+        <li class="chapter " data-level="5" data-path="resources.html">
+            
+                
+                    <a href="./resources.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Resources
+                    </a>
+                
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="contributors.html">
             
                 
                     <a href="./contributors.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>5.</b>
+                            <b>6.</b>
                         
                         Contributors
                     </a>
@@ -389,26 +440,22 @@
                     <section class="normal" id="section-">
                     
                         <h1 id="ruby-security-field-guide">Ruby Security Field Guide</h1>
-<p>In the last year, many new vulnerabilities and vulnerability classes have been discovered in Ruby applications. These vulnerabilities make use of features specific to the Ruby language and common idioms present in large Ruby projects, such as serialization and deserialization of data in the YAML format. Since these vulnerability classes were initially discovered in popular and well-studied open source software, it&#x2019;s extremely likely that they occur in applications throughout the Ruby ecosystem. Ruby applications frequently represent lucrative targets for attackers, and with the appearance of new and easily exploitable bug classes, the potential for targeted and mass exploitation of Ruby programs has been demonstrated to the world.</p>
-<p>In these exercises, we aim to bridge a knowledge and skills gap by bringing information about these new vulnerability classes to software developers.</p>
-<p>These exercises cover the recent vulnerabilities classes, their root causes, and include demonstrations and exercises where students develop exploits for real-world vulnerabilities. Readers will learn the patterns behind the vulnerabilities and develop software engineering strategies to avoid introducing similar vulnerabilities into their projects.</p>
-<h2 id="readers-will-learn">Readers Will Learn</h2>
+<p>Recently discovered vulnerabilities in Ruby applications have the potential to affect vast swathes of the Internet and attract attackers to lucrative targets online.</p>
+<p>These vulnerabilities take advantage of features and common idioms such as serialization and deserialization of data in the YAML format. Nearly all large, tested and trusted open-source Ruby projects contain some of these vulnerabilities.</p>
+<p><strong>Few developers are aware of the risks.</strong></p>
+<p>In these exercises, you&#x2019;ll cover recent Ruby vulnerabilities classes and their root causes. You&#x2019;ll see demonstrations and develop real-world exploits. You&#x2019;ll study the patterns behind the vulnerabilities and develop software engineering strategies to avoid these vulnerabilities in your projects.</p>
+<p><strong>You Will Learn</strong></p>
 <ul>
-<li>How attackers can rootkit Rack-based applications via YAML deserialization</li>
+<li>The mechanics and root causes of the recent Rails vulnerabilities</li>
+<li>Methods for mitigating the impact of deserialization flaws</li>
+<li>Rootkit techniques for Rack-based applications via YAML deserialization</li>
 <li>Mitigations techniques for YAML deserializations flaws</li>
 <li>Defensive Ruby programming techniques</li>
 <li>Advanced testing techniques and fuzzing with Mutant</li>
 </ul>
-<h2 id="prerequisites">Prerequisites</h2>
-<p>Readers should have an intermediate level of understanding of Ruby and a laptop with Ruby &gt;= 1.9.2 installed (you can use RVM to do this).</p>
-<p>In order to help prospective readers evaluate whether they are prepared for this course, take this short self-assessment questionnaire. You should be able to answer these questions with relative ease in order to get the most out of the exercises.</p>
-<ul>
-<li>Are you familiar with the command line?</li>
-<li>Have you ever refactored existing Ruby code?</li>
-<li>Have you ever written unit tests?</li>
-<li>Have you ever written YAML by hand?</li>
-<li>Have you ever used <code>instanceeval</code>, <code>classeval</code>, or <code>module_eval</code>?</li>
-</ul>
+<p>We&#x2019;ve structured this field guide so you can learn as quickly as you want, but if you have questions along the way, contact us. If there&#x2019;s enough demand, we may even schedule an online lecture.</p>
+<p>Now, to work.</p>
+<p>-The <a href="https://www.trailofbits.com" target="_blank">Trail of Bits</a> Team</p>
 
                     
                     </section>
@@ -420,7 +467,7 @@
 
         
         
-        <a href="./yaml/index.html" class="navigation navigation-next navigation-unique" aria-label="Next page: YAML"><i class="fa fa-angle-right"></i></a>
+        <a href="./prerequisites.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Prerequisites"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
