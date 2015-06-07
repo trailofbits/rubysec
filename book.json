@@ -1,6 +1,0 @@
-{
-	"plugins": ["-mixpanel", "-mathjax"],
-	"pluginsConfig": {
-		"fontSettings": { "theme": "night" }
-	}
-}
