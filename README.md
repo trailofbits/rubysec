@@ -1,23 +1,27 @@
 # Ruby Security Field Guide
-In the last year, many new vulnerabilities and vulnerability classes have been discovered in Ruby applications. These vulnerabilities make use of features specific to the Ruby language and common idioms present in large Ruby projects, such as serialization and deserialization of data in the YAML format. Since these vulnerability classes were initially discovered in popular and well-studied open source software, it’s extremely likely that they occur in applications throughout the Ruby ecosystem. Ruby applications frequently represent lucrative targets for attackers, and with the appearance of new and easily exploitable bug classes, the potential for targeted and mass exploitation of Ruby programs has been demonstrated to the world.
+Recently discovered vulnerabilities in Ruby applications have the potential to affect vast swathes of the Internet and attract attackers to lucrative targets online.
 
-In these exercises, we aim to bridge a knowledge and skills gap by bringing information about these new vulnerability classes to software developers.
+These vulnerabilities take advantage of features and common idioms such as serialization and deserialization of data in the YAML format. Nearly all large, tested and trusted open-source Ruby projects contain some of these vulnerabilities.
 
-These exercises cover the recent vulnerabilities classes, their root causes, and include demonstrations and exercises where students develop exploits for real-world vulnerabilities. Readers will learn the patterns behind the vulnerabilities and develop software engineering strategies to avoid introducing similar vulnerabilities into their projects.
+**Few developers are aware of the risks.**
 
-## Readers Will Learn
- * How attackers can rootkit Rack-based applications via YAML deserialization
- * Mitigations techniques for YAML deserializations flaws
- * Defensive Ruby programming techniques
- * Advanced testing techniques and fuzzing with Mutant
+In these exercises, you’ll cover recent Ruby vulnerabilities classes and their root causes. You’ll see demonstrations and develop real-world exploits. You’ll study the patterns behind the vulnerabilities and develop software engineering strategies to avoid these vulnerabilities in your projects.
 
-## Prerequisites
-Readers should have an intermediate level of understanding of Ruby and a laptop with Ruby >= 1.9.2 installed (you can use RVM to do this).
+**You Will Learn**
+* The mechanics and root causes of the recent Rails vulnerabilities
+* Methods for mitigating the impact of deserialization flaws
+* Rootkit techniques for Rack-based applications via YAML deserialization
+* Mitigations techniques for YAML deserializations flaws
+* Defensive Ruby programming techniques
+* Advanced testing techniques and fuzzing with Mutant
 
-In order to help prospective readers evaluate whether they are prepared for this course, take this short self-assessment questionnaire. You should be able to answer these questions with relative ease in order to get the most out of the exercises.
+We’ve structured this field guide so you can learn as quickly as you want, but if you have questions along the way, contact us. If there’s enough demand, we may even schedule an online lecture.
 
- * Are you familiar with the command line?
- * Have you ever refactored existing Ruby code?
- * Have you ever written unit tests?
- * Have you ever written YAML by hand?
- * Have you ever used `instanceeval`, `classeval`, or `module_eval`?
+Now, to work.
+
+-The [Trail of Bits](https://www.trailofbits.com) Team
+
+
+
+
+
