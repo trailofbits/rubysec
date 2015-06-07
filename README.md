@@ -1,5 +1,5 @@
 # Ruby Security Field Guide
-Recently discovered vulnerabilities in Ruby applications have the potential to affect vast swathes of the Internet and attract attackers to lucrative targets online.
+People have discovered vulnerabilities in Ruby applications with the potential to affect vast swathes of the Internet and attract attackers to lucrative targets online.
 
 These vulnerabilities take advantage of features and common idioms such as serialization and deserialization of data in the YAML format. Nearly all large, tested and trusted open-source Ruby projects contain some of these vulnerabilities.
 
@@ -8,7 +8,7 @@ These vulnerabilities take advantage of features and common idioms such as seria
 In these exercises, you’ll cover recent Ruby vulnerabilities classes and their root causes. You’ll see demonstrations and develop real-world exploits. You’ll study the patterns behind the vulnerabilities and develop software engineering strategies to avoid these vulnerabilities in your projects.
 
 **You Will Learn**
-* The mechanics and root causes of the recent Rails vulnerabilities
+* The mechanics and root causes of past Rails vulnerabilities
 * Methods for mitigating the impact of deserialization flaws
 * Rootkit techniques for Rack-based applications via YAML deserialization
 * Mitigations techniques for YAML deserializations flaws
