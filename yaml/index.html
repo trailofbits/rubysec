@@ -36,7 +36,7 @@
     <body>
         
         
-    <div class="book" data-level="1" data-basepath=".." data-revision="Sun Jun 07 2015 22:15:26 GMT-0400 (EDT)">
+    <div class="book" data-level="1" data-basepath=".." data-revision="Mon Jun 08 2015 13:16:16 GMT-0400 (EDT)">
     
 
 <div class="book-summary">
@@ -460,6 +460,14 @@
 </ul>
 <h2 id="mitigations">Mitigations</h2>
 <p>So this is all well and good, but how do we protect against such vulnerabilities?  The simple answer here is to stop using <code>eval</code>, <a href="http://postmodern.github.io/2013/03/07/its-simple-we-kill-eval.html" target="_blank">as described here</a>. Essentially, Ruby blocks are so expressive and fast, that you shouldn&apos;t ever need to use <code>eval</code>.  While one may consider going to great lengths, jumping through hoops, hashing method names, and escaping method bodies, nothing is as simple or as effective as simply using blocks. Lastly, note that <code>instance_eval</code> and <code>module_eval</code> will accept blocks, and you should <strong>always</strong> use blocks as opposed to string interpolation and <code>eval</code>. If you haven&apos;t already gotten the hint, use blocks, blocks, and more blocks!</p>
+<h3 id="quick-tips">Quick tips</h3>
+<ul>
+<li>Use the <a href="http://danieltao.com/safe_yaml/" target="_blank">safe-yaml</a> gem which overrides YAML.load</li>
+<li>Require a newer version of Psych that provides a <a href="https://github.com/tenderlove/psych/issues/119" target="_blank">safe-load</a> option</li>
+<li>Use YAML.parse and manually coerce fields</li>
+<li>Don&apos;t use YAML.load with untrusted input</li>
+<li>Remember that <code>#{}</code> is string interpolation</li>
+</ul>
 <h2 id="some-example-code">Some Example Code</h2>
 <pre><code class="lang-ruby"><span class="hljs-comment"># Here, Callbacks is a subclass of Hash</span>
 <span class="hljs-comment"># The parser will create an instance of Callbacks with the fields below</span>
