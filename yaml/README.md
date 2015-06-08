@@ -21,6 +21,13 @@ More specifically, to leverage this vulnerability, an attacker need only instant
 ## Mitigations
 So this is all well and good, but how do we protect against such vulnerabilities?  The simple answer here is to stop using `eval`, [as described here](http://postmodern.github.io/2013/03/07/its-simple-we-kill-eval.html). Essentially, Ruby blocks are so expressive and fast, that you shouldn't ever need to use `eval`.  While one may consider going to great lengths, jumping through hoops, hashing method names, and escaping method bodies, nothing is as simple or as effective as simply using blocks. Lastly, note that `instance_eval` and `module_eval` will accept blocks, and you should **always** use blocks as opposed to string interpolation and `eval`. If you haven't already gotten the hint, use blocks, blocks, and more blocks!
 
+### Quick tips
+* Use the [safe-yaml](http://danieltao.com/safe_yaml/) gem which overrides YAML.load
+* Require a newer version of Psych that provides a [safe-load](https://github.com/tenderlove/psych/issues/119) option
+* Use YAML.parse and manually coerce fields
+* Don't use YAML.load with untrusted input
+* Remember that `#{}` is string interpolation
+
 ## Some Example Code
 ```ruby
 # Here, Callbacks is a subclass of Hash
