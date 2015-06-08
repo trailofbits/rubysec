@@ -1,5 +1,5 @@
 # Ruby Security Field Guide
-People have discovered vulnerabilities in Ruby applications with the potential to affect vast swathes of the Internet and attract attackers to lucrative targets online.
+Vulnerabilities in Ruby applications have been discovered with the potential to affect vast swathes of the Internet and attract attackers to lucrative targets online.
 
 These vulnerabilities take advantage of features and common idioms such as serialization and deserialization of data in the YAML format. Nearly all large, tested and trusted open-source Ruby projects contain some of these vulnerabilities.
 
@@ -20,8 +20,3 @@ We’ve structured this field guide so you can learn as quickly as you want, but
 Now, to work.
 
 -The [Trail of Bits](https://www.trailofbits.com) Team
-
-
-
-
-
