@@ -11,7 +11,7 @@ In these exercises, you’ll cover recent Ruby vulnerabilities classes and their
 * The mechanics and root causes of past Rails vulnerabilities
 * Methods for mitigating the impact of deserialization flaws
 * Rootkit techniques for Rack-based applications via YAML deserialization
-* Mitigations techniques for YAML deserializations flaws
+* Mitigations techniques for YAML deserialization flaws
 * Defensive Ruby programming techniques
 * Advanced testing techniques and fuzzing with Mutant
 
