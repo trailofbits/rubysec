@@ -7,4 +7,4 @@ In order to help prospective readers evaluate whether they are prepared for this
  * Have you ever refactored existing Ruby code?
  * Have you ever written unit tests?
  * Have you ever written YAML by hand?
- * Have you ever used `instanceeval`, `classeval`, or `module_eval`?
+ * Have you ever used `instance_eval`, `class_eval`, or `module_eval`?
