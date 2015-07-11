@@ -8,6 +8,7 @@ If you found this content interesting and want to learn more about security, che
 * [Ruby Security Tutorial and Rails Security Guide](http://blog.honeybadger.io/ruby-security-tutorial-and-rails-security-guide/)
 * [Typical Rails Bugs](http://andrzejonsoftware.blogspot.com/2013/06/typical-rails-bugs.html)
 * [MySQL Madness and Rails](http://www.phenoelit.org/blog/archives/2013/02/05/mysql_madness_and_rails/index.html)
+* [Secure Ruby Development Guide](https://docs.fedoraproject.org/en-US/Fedora_Security_Team/1/html/Secure_Ruby_Development_Guide/index.html) by the Fedora Security Team
 * ... and our own [CTF Field Guide](https://github.com/trailofbits/ctf)
 
 
