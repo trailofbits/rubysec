@@ -17,5 +17,5 @@ task :default => :spec
 
 desc "Run mutation tests"
 task :mutate do
-  sh 'mutant -I lib/ -r secure_db --use rspec "SecureDB::Document*"'
+  sh 'mutant -I lib/ -r secure_db --use rspec "SecureDB*"'
 end
