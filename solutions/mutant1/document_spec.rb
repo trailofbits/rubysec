@@ -37,7 +37,7 @@ describe Document do
   describe "#has_access" do
     context "when the user is the owner" do
       it "should return true" do
-        subject.has_access?(owner).should be_true
+        subject.has_access?(owner).should be_truthy
       end
     end
 
@@ -51,7 +51,7 @@ describe Document do
       end
 
       it "should return true" do
-        subject.has_access?(authorized).should be_true
+        subject.has_access?(authorized).should be_truthy
       end
     end
 
@@ -65,7 +65,7 @@ describe Document do
       end
 
       it "should return false" do
-        subject.has_access?(owner).should be_false
+        subject.has_access?(owner).should be_falsey
       end
     end
   end
