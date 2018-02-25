@@ -28,5 +28,11 @@ module SecureDB
 
     alias to_s name
 
+    def eql?(other)
+      name.eql?(other.name) &&
+        clearance.equal?(other.clearance) &&
+        authorizations.eql?(other.authorizations)
+    end
+    alias == eql?
   end
 end

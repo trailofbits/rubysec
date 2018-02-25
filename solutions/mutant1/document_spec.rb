@@ -37,7 +37,7 @@ describe Document do
   describe "#has_access" do
     context "when the user is the owner" do
       it "should return true" do
-        subject.has_access?(owner).should be_truthy
+        subject.has_access?(owner.clone).should be_truthy
       end
     end
 
@@ -163,7 +163,7 @@ describe Document do
       context "when the authorized is the owner" do
         it "should raise an exception" do
           lambda {
-            subject.revoke_access(authorizer,owner)
+            subject.revoke_access(authorizer, owner.clone)
           }.should raise_error("User '#{owner}' is the owner of this document!")
         end
       end
@@ -171,7 +171,7 @@ describe Document do
       context "when the authorized was never granted access" do
         it "should raise an exception" do
           lambda {
-            subject.revoke_access(authorizer,authorized)
+            subject.revoke_access(authorizer, authorized)
           }.should raise_error("User '#{authorized}' does not have access to the document")
         end
       end
@@ -187,7 +187,7 @@ describe Document do
 
         it "should raise an exception" do
           lambda {
-            subject.revoke_access(authorizer,authorized)
+            subject.revoke_access(authorizer, authorized)
           }.should raise_error("User '#{authorizer}' is not allowed to revoke access for User '#{authorized}'")
         end
       end
@@ -201,10 +201,11 @@ describe Document do
           )
         end
 
-        before { subject.authorizations << authorization      }
-        before { subject.revoke_access(authorizer,authorized) }
-
         it "should remove the authorization" do
+          subject.authorizations << authorization
+
+          subject.revoke_access(authorizer.clone, authorized.clone)
+
           subject.authorizations.should_not include(authorization)
         end
       end
