@@ -20,7 +20,7 @@ There are two rake tasks to help you:
 
 [Mutant](https://github.com/mbj/mutant#readme) can also be ran against individual methods:
 
-    bundle exec mutant --rspec-full -r ./spec/document_spec.rb ::SecureDB::Document#grant_access
+    bundle exec mutant --include lib/ --require secure_db --use rspec "SecureDB::Document#grant_access"
 
 When `rake mutant` prints all green, you have achieved full test coverage.
 

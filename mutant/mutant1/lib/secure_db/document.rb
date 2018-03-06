@@ -1,7 +1,6 @@
 require 'secure_db/exceptions'
 
 require 'virtus'
-
 module SecureDB
   class Document
 
@@ -42,7 +41,7 @@ module SecureDB
     #   previously granted access.
     #
     def has_access?(user)
-      (owner == user) ^ authorized_users.include?(user)
+      owner.eql?(user) ^ authorized_users.include?(user)
     end
 
     #
@@ -99,19 +98,19 @@ module SecureDB
     #
     def revoke_access(authorizer,authorized)
       if has_access?(authorizer)
-        if owner == authorized
+        if owner.eql? authorized
           raise("User '#{authorized}' is the owner of this document!")
         end
 
         authorization = authorizations.find do |authorization|
-          authorization.authorized == authorized
+          authorization.authorized.eql? authorized
         end
 
         unless authorization
           raise("User '#{authorized}' does not have access to the document")
         end
-
-        unless authorization.authorizer == authorizer
+ 
+        unless authorization.authorizer.eql? authorizer
           raise("User '#{authorizer}' is not allowed to revoke access for User '#{authorized}'")
         end
 
