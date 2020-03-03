@@ -3,5 +3,5 @@ source 'https://rubygems.org/'
 gem 'virtus',       '~> 0.5'
 gem 'mutant-rspec', '~> 0.8'
 
-gem 'rake',   '~> 10.0'
+gem 'rake',   '~> 12.3'
 gem 'rspec',  '~> 3.0'
